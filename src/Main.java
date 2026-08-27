@@ -28,5 +28,8 @@ public class Main {
                 System.out.println(estudante.getNome() + " - Média: " + estudante.calculaMedia());
             }
         }
+
+        int[] pesos = {2, 2, 3, 1, 2};
+        System.out.println("Média ponderada do primeiro estudante: " + estudantes[0].calculaMedia(pesos));
     }
 }
