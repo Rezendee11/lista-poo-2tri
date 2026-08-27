@@ -31,5 +31,15 @@ public class Main {
 
         int[] pesos = {2, 2, 3, 1, 2};
         System.out.println("Média ponderada do primeiro estudante: " + estudantes[0].calculaMedia(pesos));
+
+        Livro livro = new Livro("Dom Casmurro");
+        System.out.println("Livro disponível? " + livro.isDisponivel());
+        livro.emprestar();
+        System.out.println("Livro disponível após empréstimo? " + livro.isDisponivel());
+        livro.devolver();
+        System.out.println("Livro disponível após devolução? " + livro.isDisponivel());
+
+        Periodico periodico = new Periodico("Revista Exame", 45);
+        System.out.println("Periódico: " + periodico.getTitulo() + " - Volume " + periodico.getNumeroVolume());
     }
 }
